@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import PlayerTable from './components/PlayerTable';
+
+export const config = {
+  endpoint: `https://leaguex.s3.ap-south-1.amazonaws.com/task/fantasy-sports/Get_All_Players_of_match.json`,
+};
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <PlayerTable/>
     </div>
   );
 }
